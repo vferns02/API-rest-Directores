@@ -30,10 +30,10 @@ var mongodb = require('./lib/mongodb.js'); //no es necesario asignarlo a una var
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
 app.use('/directores',require('./routes/directores'));
-//app.use('/directores/563b2ed4de10e78513d26b1a',require('./routes/id'));
-//app.use('/directores/563b36d40181b799144f1c16',require('./routes/id2'));
-//app.use('/directores/563b2ef7de10e78513d26b1b',require('./routes/id3'));
-//app.use('/directores/563b2f023bf7e8a413bcd040',require('./routes/id4'));
+app.use('/directores/563b2ed4de10e78513d26b1a',require('./routes/apiv1/id'));
+app.use('/directores/563b36d40181b799144f1c16',require('./routes/apiv1/id2'));
+app.use('/directores/563b2ef7de10e78513d26b1b',require('./routes/apiv1/id3'));
+app.use('/directores/563b2f023bf7e8a413bcd040',require('./routes/apiv1/id4'));
 
 //API Version 1
 
